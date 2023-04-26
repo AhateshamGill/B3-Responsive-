@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <style>
+        .parent{
+            width: 70%;
+            margin: auto;
+            align-items: center;
+            display: flex;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            gap: 2rem;
+        }
+        .heading{
+            text-transform: capitalize;
+            font-size: 1.5rem;
+        }
+        .info{
+            color: gray;
+            text-align: justify;
+        }
+        .title-section{
+            width: 50%;
+        }
+
+        @media only screen and (max-width:600px){
+            .parent{
+                flex-direction: column;
+                width: 100%;
+            }
+            .title-section{
+                width: 100%;
+            }
+            .heading{
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="title-section">
+        <div class="heading">
+            <h1>This is a heading</h1>
+        </div>
+        <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil adipisci iste eveniet rem dolorem in vitae impedit sequi. Accusamus vitae provident eaque esse illum quod atque sequi repellendus doloremque voluptatum incidunt, necessitatibus dicta possimus fugit quas nisi amet totam iusto.</p>
+        </div>
+        <div class="button">
+            <button>this is a  button</button>
+            <button>this is a  button</button>
+        </div>
+    </div>
+    <div class="image-section">
+        <img width="100%" src="https://img.freepik.com/free-vector/flat-computer-engineering-concept_23-2148152150.jpg?size=626&ext=jpg&ga=GA1.1.248155838.1682326548&semt=robertav1_2_sidr" alt="">
+    </div>
+</div>
+</body>
+</html>
